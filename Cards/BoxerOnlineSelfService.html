@@ -50,6 +50,23 @@ a:hover {
 }
 
 button {
+  background-color: var(--boxer-white);
+  color: var(--boxer-red);
+  border: solid;
+	
+
+  font-family: "Open Sans", Verdana, Arial, sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: .875em;
+  display: inline-block;
+  transition: box-shadow 0.2s;
+	
+  border-radius: 1em;
+  padding: 1em;
+  margin: .5em 1em;
+
+/*
   background-color: var(--boxer-red);
   color: var(--boxer-white);
   border: none;
@@ -63,10 +80,11 @@ button {
 
   padding: 1em;
   margin: .5em 1em;
+*/
 }
 
 button:hover {
-  background-color: var(--boxer-brick);
+  box-shadow: inset 0em 0em 0em .1em var(--boxer-red);
   cursor: pointer;
 }
 
@@ -102,8 +120,11 @@ button:hover {
         Grades</a>
 </section>
 
-<section class="link" id="link3">
+<section class="link" id="link4">
 	<a href="https://sserv.pacificu.edu/Student/FinancialAid/Home" target="_blank">
        <span class="material-symbols-outlined">account_balance</span>
        Financial Aid</a>
 </section>
+
+</body>
+</html>
