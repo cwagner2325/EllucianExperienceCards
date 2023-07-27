@@ -36,7 +36,7 @@ a {
   font-weight: bold;
   text-decoration: none;
  
-  padding: 1em;
+  padding: .75em 1em;
   color: var(--boxer-gray);
   display: flex;
   align-items: center;
@@ -50,23 +50,26 @@ a:hover {
 }
 
 button {
-  background-color: var(--boxer-red);
-  color: var(--boxer-white);
-  border: none;
-  border-radius: 1em;
-  
-  font-size: 14px;
-  font-family: 'Open Sans';
+  background-color: var(--boxer-white);
+  color: var(--boxer-red);
+  border: solid;
+	
+
+  font-family: "Open Sans", Verdana, Arial, sans-serif;
   font-weight: bold;
   text-decoration: none;
-  text-align: center;
-
+  font-size: .875em;
+  display: inline-block;
+  transition: box-shadow 0.2s;
+	
+  border-radius: 1em;
   padding: 1em;
   margin: .5em 1em;
+
 }
 
 button:hover {
-  background-color: var(--boxer-brick);
+  box-shadow: inset 0em 0em 0em .1em var(--boxer-red);
   cursor: pointer;
 }
 
@@ -97,13 +100,14 @@ button:hover {
 </section>
 
 <section class="link" id="link3">
-	<a href="https://sserv.pacificu.edu/Student/Grades" target="_blank">
+	<a href="https://sserv.pacificu.edu/Student/Student/Grades" target="_blank">
         <span class="material-symbols-outlined">assignment</span>
         Grades</a>
 </section>
 
-<section class="link" id="link3">
+<section class="link" id="link4">
 	<a href="https://sserv.pacificu.edu/Student/FinancialAid/Home" target="_blank">
        <span class="material-symbols-outlined">account_balance</span>
        Financial Aid</a>
 </section>
+
