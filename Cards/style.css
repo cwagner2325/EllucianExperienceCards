@@ -1,0 +1,59 @@
+:root {
+  --boxer-red: #B51217; 
+  --boxer-brick: #660000;
+  --hover: #F6F6F6;
+  --boxer-gray: #696969;
+  --boxer-white: #FFFFFF;
+  --boxer-gold: #CDA72B;
+  --boxer-yellow: #FCB912;
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.toplink {
+  margin-top: .0em;
+  margin-bottom: .0em;
+  border-bottom: .5px solid black;
+  border-top: .5px solid black;
+}
+
+.toplink:hover {
+  background-color: var(--hover);
+}
+
+
+.link {
+  margin-top: .0em;
+  margin-bottom: .0em;
+  border-bottom: .5px solid black;
+}
+
+.link:hover {
+  background-color: var(--hover);
+}
+
+a {
+  font-size: 14px;
+  font-family:'Open Sans';
+  font-weight: bold;
+  text-decoration: none;
+ 
+  padding: .75em 1em;
+  color: var(--boxer-gray);
+  display: flex;
+  align-items: center;
+}
+
+a:hover {
+  color: var(--boxer-red);
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.material-symbols-outlined {
+  padding-right: .4em;
+  color: var(--boxer-red);
+}
