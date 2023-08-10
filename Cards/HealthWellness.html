@@ -32,6 +32,10 @@ html, body {
 }
 
 .sidenav .dropdown-btn {
+  background-color: var(--boxer-white);
+  color: var(--boxer-red);
+  border: none;
+	
   font-size: 14px;
   font-family: 'Open Sans', Verdana, Arial, sans-serif;
   text-decoration: none;
@@ -43,6 +47,11 @@ html, body {
   background: none;
   width: 100%;
   text-align: left;
+  cursor: pointer;
+}
+	
+.dropdown-btn:hover {
+  box-shadow: inset 0em 0em 0em 0em;
   cursor: pointer;
 }
 
@@ -83,23 +92,26 @@ a:hover {
 }
 
 button {
-  background-color: var(--boxer-red);
-  color: var(--boxer-white);
-  border: none;
-  border-radius: 1em;
-  
-  font-size: 14px;
-  font-family: 'Open Sans';
+  background-color: var(--boxer-white);
+  color: var(--boxer-red);
+  border: solid;
+	
+
+  font-family: "Open Sans", Verdana, Arial, sans-serif;
   font-weight: bold;
   text-decoration: none;
-  text-align: center;
-
+  font-size: .875em;
+  display: inline-block;
+  transition: box-shadow 0.2s;
+	
+  border-radius: 1em;
   padding: 1em;
-  margin: .25em 1em;
+  margin: .5em 1em;
+
 }
 
 button:hover {
-  background-color: var(--boxer-brick);
+  box-shadow: inset 0em 0em 0em .1em var(--boxer-red);
   cursor: pointer;
 }
 
