@@ -50,26 +50,28 @@ a:hover {
 }
 
 button {
-  background-color: var(--boxer-red);
-  color: var(--boxer-white);
-  border: none;
-  border-radius: 7px;
-  
-  font-size: 14px;
-  font-family: 'Open Sans';
+  background-color: var(--boxer-white);
+  color: var(--boxer-red);
+  border: solid;
+	
+
+  font-family: "Open Sans", Verdana, Arial, sans-serif;
   font-weight: bold;
   text-decoration: none;
-  text-align: center;
-
-  padding: .8em;
+  font-size: .875em;
+  display: inline-block;
+  transition: box-shadow 0.2s;
+	
+  border-radius: 1em;
+  padding: 1em;
   margin: .5em 1em;
+
 }
 
 button:hover {
-  background-color: var(--boxer-brick);
+  box-shadow: inset 0em 0em 0em .1em var(--boxer-red);
   cursor: pointer;
 }
-
 
 .material-symbols-outlined {
   padding-right: .4em;
@@ -82,7 +84,7 @@ button:hover {
 <body>
 
 <form action="https://pacificu.cafebonappetit.com/" target="_blank">
-  <button>Daily Bon Appetit Menu</button>
+  <button>Daily Bon Appetit Menu &#8250;</button>
 </form>
 
 <section class="link" id="link1" style="border-top: .5px solid black; margin-top: .2em">
