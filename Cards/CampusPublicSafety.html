@@ -1,3 +1,4 @@
+<!doctype html>
 <html>
 <head>
 
@@ -15,23 +16,74 @@
   --boxer-yellow: #FCB912;
 }
 
-h3 {
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+	
+.sidenav {
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  padding-top: 1em;
+}
+
+.sidenav .dropdown-btn {
+  font-size: 14px;
+  font-family: 'Open Sans', Verdana, Arial, sans-serif;
+  font-weight: bold;
+  text-decoration: none;
   color: var(--boxer-red);
-  font-size: 16px;
-  font-family:'Open Sans';
-  font-style: italic;
+	
+  padding: .5em 0em 1em 1em;
+  margin: 0em;
+  display: block;
+  background: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+	
+  border: none;
+  width: 95%;
+  background: none;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
+
+.dropdown-container {
+  display: none;
   padding-left: 1em;
 }
 
 li {
   color: var(--boxer-gray);
   font-size: 14px;
-  font-family:'Open Sans';
+  font-family: 'Open Sans', Verdana, Arial, sans-serif;
   padding-left: 1.5em;
 }
 
-section {
-  padding-bottom: 1em;
+.dropdown-container {
+  display: none;
+  padding-left: 1em;
+}
+
+h3 {
+  color: var(--boxer-red);
+  font-size: 14px;
+  font-family: 'Open Sans', Verdana, Arial, sans-serif;
+  padding: .5em 0em .25em 1em;
+  margin: 0em;
+}
+
+li {
+  color: var(--boxer-gray);
+  font-size: 14px;
+  font-family: 'Open Sans', Verdana, Arial, sans-serif;
+  padding-left: 1.5em;
 }
 
 .link {
@@ -50,11 +102,10 @@ a {
   font-weight: bold;
   text-decoration: none;
  
-  padding: .75em 1em;
+  padding: 1em;
   color: var(--boxer-gray);
   display: flex;
   align-items: center;
-
 }
 
 a:hover {
@@ -66,28 +117,69 @@ a:hover {
 .material-symbols-outlined {
   padding-right: .4em;
   color: var(--boxer-red);
-}		
+}
+	
+button {
+  background-color: var(--boxer-red);
+  color: var(--boxer-white);
+  border: none;
+  border-radius: 1em;
+  
+  font-size: 14px;
+  font-family: 'Open Sans';
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
 
+  padding: 1em;
+  margin: .25em 1em;
+}
+	
+.more-info, .more-info-link{
+  font-size: 12px;
+  font-family: 'Open Sans', Verdana, Arial, sans-serif;
+  font-weight: normal;
+
+  color: var(--boxer-gray);
+  display:inline-block;
+  align-items: center;
+}
+
+.more-info {
+  padding-left: 4em;
+}
+
+.more-info-link {
+  text-decoration: underline;
+  color: var(--boxer-red);
+  padding: 0em;
+}
+
+.more-info-link:hover {
+  text-decoration: underline;		
+}
+ 
 </style>
 </head>
 <body>
 
 <h3>Officers on duty 24-hours a day</h3>
 
-<section>
+<section style="padding-bottom: 1em;">
   <li>Forest Grove: 503-352-2230</li>
   <li>Hillsboro: 503-352-7207</li>
   <li>Email: cps@pacificu.edu</li>
 </section>
 
-<p class="link" style="border-top: .5px solid black;">
+<section class="link" style="border-top: .5px solid black;">
 	<a href="https://pacificu.omnilert.net/subscriber.php" target="_blank">
     	<span class="material-symbols-outlined">notifications_active</span>
         Sign Up for Boxer Alerts</a>
-</p>
+</section>
+	
+<section class="more-info">
+	<p>More Info <a class="more-info-link" href="https://www.pacificu.edu/support-safety/campus-public-safety" target="_blank">CPS &#8250;</a>
+	</p>
+</section>
 
-<p class="link">
-	<a href="https://www.pacificu.edu/support-safety/campus-public-safety" target="_blank">
-    	<span class="material-symbols-outlined">shield_person</span>
-        More CPS Information</a>
-</p>
+	
