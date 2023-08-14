@@ -1,3 +1,7 @@
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+
 :root {
   --boxer-red: #B51217; 
   --boxer-brick: #660000;
@@ -12,48 +16,97 @@ html, body {
     max-width: 100%;
     overflow-x: hidden;
 }
-
-.toplink {
-  margin-top: .0em;
-  margin-bottom: .0em;
-  border-bottom: .5px solid black;
-  border-top: .5px solid black;
+	
+.sidenav {
+	height: 100%;
+	width: 100%;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	overflow-x: hidden;
+	padding-top: .5em;
 }
 
-.toplink:hover {
-  background-color: var(--hover);
+.sidenav .dropdown-btn {
+  background-color: var(--boxer-white);
+  color: var(--boxer-red);
+  border: none;
+	
+  font-size: 14px;
+  font-family: 'Open Sans', Verdana, Arial, sans-serif;
+  text-decoration: none;
+  color: var(--boxer-red);
+	
+  padding: .5em 0em .2em 1em;
+  margin: 0em;
+  display: block;
+  background: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+}
+	
+.dropdown-btn:hover {
+  box-shadow: inset 0em 0em 0em 0em;
+  cursor: pointer;
 }
 
-
-.link {
-  margin-top: .0em;
-  margin-bottom: .0em;
-  border-bottom: .5px solid black;
+.dropdown-container {
+  display: none;
+  padding-left: 1em;
 }
 
-.link:hover {
-  background-color: var(--hover);
+h3 {
+  color: var(--boxer-red);
+  font-size: 14px;
+  font-family: 'Open Sans', Verdana, Arial, sans-serif;
+  padding: .5em 0em .25em 1em;
+  margin: 0em;
 }
+
+li {
+  color: var(--boxer-gray);
+  font-size: 14px;
+  font-family: 'Open Sans', Verdana, Arial, sans-serif;
+  padding-left: 1.5em;
+}	
 
 a {
-  font-size: 14px;
-  font-family:'Open Sans';
-  font-weight: bold;
-  text-decoration: none;
+  font-size: 12px;
+  font-family: 'Open Sans', Verdana, Arial, sans-serif;
  
-  padding: .75em 1em;
+  padding-left: 2em;
   color: var(--boxer-gray);
   display: flex;
   align-items: center;
 }
 
+
 a:hover {
   color: var(--boxer-red);
   cursor: pointer;
-  text-decoration: none;
 }
 
-.material-symbols-outlined {
-  padding-right: .4em;
+button {
+  background-color: var(--boxer-white);
   color: var(--boxer-red);
+  border: solid;
+	
+
+  font-family: "Open Sans", Verdana, Arial, sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: .875em;
+  display: inline-block;
+  transition: box-shadow 0.2s;
+	
+  border-radius: 1em;
+  padding: 1em;
+  margin: .5em 1em;
+
+}
+
+button:hover {
+  box-shadow: inset 0em 0em 0em .1em var(--boxer-red);
+  cursor: pointer;
 }
