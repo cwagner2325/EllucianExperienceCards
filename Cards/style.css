@@ -160,3 +160,7 @@ button:hover {
   color: var(--boxer-red);
   padding: 0em;
 }
+
+.more-info-link:hover {
+  text-decoration: underline;		
+}
